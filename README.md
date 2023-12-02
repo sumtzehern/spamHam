@@ -11,6 +11,8 @@ You need to have Python 3.6 or higher installed on your machine. You also need t
 - pandas
 - numpy
 - sklearn
+- <img width="370" alt="Screenshot 2023-12-01 at 11 58 32 PM" src="https://github.com/sumtzehern/spamHam/assets/77678835/ac66199a-e0d6-4fc8-8618-eecfb09d3d2d">
+
 
 ## Data Preprocessing
 The program reads emails from files in a given directory. It assumes that the emails are separated into 'spam' and 'ham' directories. The program reads each file line by line and collects the lines that are part of the email body.
@@ -34,3 +36,5 @@ The program calculates the accuracy of the model on the test set. While accuracy
 
 ## Results
 The program was tested on a dataset of emails for spam detection from Kaggle. The dataset was split into a training set and a test set, and the Multinomial Naive Bayes classifier was trained on the training set. The accuracy of the model on the test set was 98.78%. The classification report for the model is as follows:
+<img width="477" alt="Screenshot 2023-12-01 at 11 58 21 PM" src="https://github.com/sumtzehern/spamHam/assets/77678835/93603e94-8de8-4e5b-8bb7-9cd359b54305">
+<img width="550" alt="Screenshot 2023-12-01 at 11 58 00 PM" src="https://github.com/sumtzehern/spamHam/assets/77678835/a0ea8a3d-bca2-4283-8105-804073d5bf39">
