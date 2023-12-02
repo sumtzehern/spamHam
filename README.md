@@ -12,7 +12,7 @@ You need to have Python 3.6 or higher installed on your machine. You also need t
 - numpy
 - sklearn
 
-### Data Preprocessing
+## Data Preprocessing
 The program reads emails from files in a given directory. It assumes that the emails are separated into 'spam' and 'ham' directories. The program reads each file line by line and collects the lines that are part of the email body.
 
 The program then creates a pandas DataFrame where each row represents an email and has two columns: 'message' (the email content) and 'class' (the classification of the email).
@@ -32,5 +32,5 @@ The program uses the CountVectorizer class from sklearn to convert the email tex
 The program uses the Multinomial Naive Bayes classifier from sklearn for classification. This class has several hyperparameters that you might want to tune to improve the performance of the model.
 The program calculates the accuracy of the model on the test set. While accuracy is a good metric, it might not be sufficient for all problems. Depending on the distribution of your data, you might want to calculate other metrics like precision, recall, F1 score, or AUC-ROC.
 
-### Results
+## Results
 The program was tested on a dataset of emails for spam detection from Kaggle. The dataset was split into a training set and a test set, and the Multinomial Naive Bayes classifier was trained on the training set. The accuracy of the model on the test set was 98.78%. The classification report for the model is as follows:
